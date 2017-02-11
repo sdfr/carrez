@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Projet Carrez</title>
+    <!-- inserer link CSS ici -->
+</head>
+<body>
+    Recherchez des annonces, puis bouton droit sur le lien + copier
+    <form method="POST" action="/">
+        <input name="url_lbc" type="text" placeholder="Collez l'adresse d'une annonce leboncoin" size="100"/>
+        <input type="submit" value="Tester" />
+    </form>
+    <%
+    if(locals.msg) {
+    %>
+    <div class="msg-info">
+        <%- msg %>
+    </div>
+    <%
+    }
+    %>
+    <iframe src="<%= url %>" width="1024" height="700"></iframe>
+</body>
+</html>
