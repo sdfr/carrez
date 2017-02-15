@@ -56,10 +56,12 @@ fieldset{
 
 .affaire-bonne {
     background-color: #4CAF50;
+    border-radius: 10px;
 }
 
 .affaire-mauvaise {
     background-color: #f44336;
+    border-radius: 10px;
 }
 
 /* The close button */
