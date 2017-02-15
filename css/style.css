@@ -8,8 +8,8 @@ body, html{
 	text-align: center;
 	color: rgba(0, 0, 0, 1);
 	background-color: #000000;
-	background-image: url("/css/page-title-1920x300.jpg");
-	background-size: 100% 30%;
+	background-image: url("/css/img_Panorama-on-the-Terrace-lt-1.jpg");
+	background-size: 100% auto;
     margin:0;
     background-repeat:no-repeat;
 	font-family: Arial, sans-serif;
@@ -17,11 +17,12 @@ body, html{
 }
 
 fieldset{
+	color: white;
 	margin: 0 auto;
     text-align: left;
     width : 720px;
     border: 0;
-	background-color: rgba(192,192,192,0.5);
+	background-color: rgba(41, 49, 51, 0.5);
 }
 
 #test{
@@ -48,7 +49,6 @@ fieldset{
 
 .msg-info, p {
     padding: 20px;
-
     color: white;
     margin-top: 15px;
     margin-bottom: 15px;
