@@ -12,6 +12,7 @@ app.set('view engine', 'ejs');
 app.engine('.html', ejs.renderFile);
 app.use(parser.urlencoded({ extended: false }));
 app.use(parser.json());
+app.use(express.static(__dirname + '/'));
 
 
 app.test = function () {

@@ -1,26 +1,44 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Projet Carrez</title>
-    <!-- inserer link CSS ici -->
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-    Recherchez des annonces, puis bouton droit sur le lien + copier
-    <form method="POST" action="/">
-        <input name="url_lbc" type="text" placeholder="Collez l'adresse d'une annonce leboncoin" size="100"/>
-        <input type="submit" value="Tester" />
-    </form>
-    <%
-    if(locals.msg) {
-    %>
-    <div class="msg-info">
-        <%- msg %>
+
+    <div class="header">
+        <div class="clear"></div>
+        <div class="custombackground"></div>
     </div>
-    <%
-    }
-    %>
+
+    <div class="center">
+        <div class="content">
+            <h1>Bonne affaire?</h1>
+        </div>
+    </div>
+
+    <br/>
+    Naviguez dans la liste des annonces, puis clic droit sur le lien, puis copiez le lien
+    <br/>
+    <form id="testForm" method="POST" action="/">
+        <fieldset>
+            <input id="test" name="url_lbc" type="text" placeholder="Collez l'adresse d'une annonce leboncoin" size="100" required="" />
+            <input id="submitButton" type="submit" classe="button" value="Tester" />    
+        </fieldset>
+    </form>
+    </br>
+        <%
+        if(locals.msg) {
+        %>
+        <div class="msg-info">
+            <%- msg %>
+        </div>
+        <%
+        }
+        %>
+    </br>
     <iframe src="<%= url %>" width="1024" height="700"></iframe>
 </body>
 </html>
